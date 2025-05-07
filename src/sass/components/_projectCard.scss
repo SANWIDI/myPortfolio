@@ -1,0 +1,152 @@
+@use "../util" as u;
+
+.card {
+  background: rgb(241, 148, 76);
+  padding: 16px;
+  border-radius: u.$border-radius;
+  border-color: whitesmoke;
+  @include u.box-shadow();
+  text-align: center;
+
+  &--project {
+    border-left: 4px solid u.$secondary-color;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    color: lighten(u.$primary-color, 20%);
+  }
+
+  &__description {
+    font-size: 1rem;
+    color: lighten(u.$light-gray, 40%);
+  }
+
+  &__button {
+    background: u.$secondary-color;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin: 8px 0;
+    cursor: pointer;
+    border-radius: u.$border-radius;
+    transition: background 0.3s;
+
+    &--toggle {
+      background: darken(u.$secondary-color, 10%);
+    }
+
+    &:hover {
+      background: lighten(u.$secondary-color, 10%);
+    }
+  }
+
+  &__link {
+    display: block;
+    color: lighten(u.$primary-color, 20%);
+    text-decoration: underline;
+    margin-top: 8px;
+
+    &:hover {
+      color: lighten(u.$primary-color, 10%);
+    }
+  }
+}
+
+.dark-mode .card {
+  background: var(--card-color);
+
+  &__title {
+    color: u.$primary-color;
+  }
+
+  &__description {
+    color: darken(u.$light-gray, 70%);
+  }
+
+  &__link {
+    display: block;
+    color: u.$primary-color;
+    text-decoration: underline;
+    margin-top: 8px;
+
+    &:hover {
+      color: darken(rgb(198, 242, 198), 10%);
+    }
+  }
+}
+
+// .card {
+//   background: var(--card-color);
+//   padding: 16px;
+//   border-radius: u.$border-radius;
+//   @include u.box-shadow();
+//   text-align: center;
+
+//   &--project {
+//     border-left: 4px solid u.$secondary-color;
+//   }
+
+//   &__title {
+//     font-size: 1.5rem;
+//     color: lighten(u.$primary-color, 20%);
+//   }
+
+//   &__description {
+//     font-size: 1rem;
+//     color: lighten(u.$light-gray, 40%);
+//   }
+
+//   &__button {
+//     background: u.$secondary-color;
+//     color: white;
+//     border: none;
+//     padding: 8px 12px;
+//     margin: 8px 0;
+//     cursor: pointer;
+//     border-radius: u.$border-radius;
+//     transition: background 0.3s;
+
+//     &--toggle {
+//       background: darken(u.$secondary-color, 10%);
+//     }
+
+//     &:hover {
+//       background: lighten(u.$secondary-color, 10%);
+//     }
+//   }
+
+//   &__link {
+//     display: block;
+//     color: lighten(u.$primary-color, 20%);
+//     text-decoration: underline;
+//     margin-top: 8px;
+
+//     &:hover {
+//       color: lighten(u.$primary-color, 10%);
+//     }
+//   }
+// }
+
+// .dark-mode .card {
+//   background: var(--card-color);
+
+//   &__title {
+//     color: u.$primary-color;
+//   }
+
+//   &__description {
+//     color: darken(u.$light-gray, 70%);
+//   }
+
+//   &__link {
+//     display: block;
+//     color: u.$primary-color;
+//     text-decoration: underline;
+//     margin-top: 8px;
+
+//     &:hover {
+//       color: darken(rgb(198, 242, 198), 10%);
+//     }
+//   }
+// }

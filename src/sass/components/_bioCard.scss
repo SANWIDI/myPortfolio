@@ -1,0 +1,36 @@
+.top {
+  width: 100%;
+  margin: 20px;
+  border-radius: 4px;
+  padding-bottom: 8px;
+  background: white;
+}
+
+.top-div {
+  background: linear-gradient(rgb(241, 161, 56), pink);
+
+  height: 125px;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.profile img {
+  height: 150px;
+  border-radius: 100px;
+  margin-top: -75px;
+  padding: 5px;
+  background-color: whitesmoke;
+}
+
+.profile-description {
+  padding: 20px, 40px;
+  font-size: 14px;
+}
+
+.profile-button {
+  font-size: 16px;
+  background-color: rgb(237, 165, 101);
+  margin: 20px 100px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  border-radius: 40px;
+}

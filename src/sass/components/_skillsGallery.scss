@@ -1,0 +1,69 @@
+// .skills-gallery {
+//   display: grid;
+//   //grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+//   grid-template-columns: 250px 250px;
+//   grid-template-rows: auto, auto;
+//   gap: 20px;
+//   padding: 20px;
+// }
+
+// vertical view
+
+// .skills-gallery {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+//   gap: 2.5rem;
+//   padding: 2rem;
+//   justify-content: center;
+
+//   // Optional: card-like styling for each item
+//   & > * {
+//     background: #fff;
+//     border-radius: 0.75rem;
+//     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+//     padding: 1rem;
+//     text-align: center;
+//     transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+//     &:hover {
+//       transform: translateY(-4px);
+//       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+//     }
+//   }
+// }
+
+.skills-gallery {
+  display: flex;
+  flex-wrap: nowrap; // change to "wrap"  to break lines
+  gap: 1.5rem;
+  padding: 2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  & > * {
+    flex: 0 0 auto; // so items don’t shrink and stay same width
+    width: 220px;
+    background: #fff;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+    text-align: center;
+    scroll-snap-align: start;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  // features Optional smooth scroll
+  &::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #e57a08;
+    border-radius: 4px;
+  }
+}

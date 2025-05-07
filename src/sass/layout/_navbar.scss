@@ -1,0 +1,77 @@
+@use "../util" as *;
+
+// /* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.the_nav {
+  background: linear-gradient(rgb(238, 96, 56), rgb(245, 183, 160));
+  padding: 10rem 14%;
+  border-radius: 8px 4px 0px 0px;
+}
+
+/* Navbar Container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Navigation Links */
+.links {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  text-transform: uppercase;
+  color: rgb(248, 248, 244);
+  flex-wrap: wrap;
+}
+
+.links a {
+  color: #222; // Softer black for better readability
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+
+  position: relative;
+  padding: 0.3rem 0;
+
+  // Underline effect on hover with animation
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background-color: hsl(0, 2%, 32%);
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  &:hover {
+    color: hsl(0, 2%, 32%);
+  }
+}
+
+.button {
+  background-color: antiquewhite;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: rgb(255, 228, 196);
+}
