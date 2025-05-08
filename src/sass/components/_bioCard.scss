@@ -4,33 +4,46 @@
   border-radius: 4px;
   padding-bottom: 8px;
   background: white;
-}
-
-.top-div {
-  background: linear-gradient(rgb(241, 161, 56), pink);
-
-  height: 125px;
-  border-radius: 4px 4px 0px 0px;
+  display: flex;
+  justify-content: center;
 }
 
 .profile img {
-  height: 150px;
+  height: 50px;
   border-radius: 100px;
-  margin-top: -75px;
+  margin-top: -25px;
   padding: 5px;
-  background-color: whitesmoke;
+  background-color: rgb(4, 6, 107);
+}
+
+.profile-wrapper {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
 .profile-description {
-  padding: 20px, 40px;
-  font-size: 14px;
+  padding: 20px 40px; // Fixed comma issue
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 .profile-button {
   font-size: 16px;
-  background-color: rgb(237, 165, 101);
-  margin: 20px 100px;
-  padding-top: 8px;
-  padding-bottom: 10px;
+  background-color: #f39c12;
+  color: rgb(247, 241, 241);
+  margin-top: 20px;
+  padding: 8px 24px;
   border-radius: 40px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: rgb(4, 6, 107);
+  }
 }

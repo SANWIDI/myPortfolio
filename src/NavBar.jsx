@@ -12,7 +12,7 @@ const NavBar = () => {
           <NavLink to="/projects">Projects</NavLink>
           <NavLink to="/review">Contact Me</NavLink>
         </div>
-        {/* <button className="button">...</button> */}
+       
       </div>
     </nav>
   );

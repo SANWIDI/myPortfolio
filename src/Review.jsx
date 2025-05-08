@@ -50,12 +50,13 @@ function Review(props) {
   };
 
   return (
-    <div>
-      <h2>Do you like my profile? Hire me!</h2>
+    <div className="my_form">
+      <h2 className="title">Do you like my profile? Hire me!</h2>
+
       {/* action="https://formsubmit.co/your@email.com" method="POST" */}
 
       <form
-        // onSubmit={handleSubmit}
+        onSubmit={handleChange}
         action="https://formsubmit.co/b4cf10a7d109b046d3db115039c9633c"
         method="POST"
         className="form"

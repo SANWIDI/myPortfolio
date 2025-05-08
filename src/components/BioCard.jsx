@@ -1,15 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import profile_icon from "../images/cer.png";
+import profile_icon from "../images/certified.jpg";
 
 const BioCard = () => {
   return (
-    <div className="top">
+    <div className="profile-wrapper">
       <div className="top-div"> </div>
       <div className="profile">
         <img src={profile_icon} alt="" />
         <div className="profile-description">
-          <h2>Description</h2>
+          <h2>Mireille SANWIDI</h2>
           <p>
             Hello! Iam a passionate web application development student with a
             strong focus on front-end technologies, especially React. I love

@@ -8,9 +8,10 @@
 }
 
 /* Navbar Styles */
+// background: linear-gradient(rgb(238, 96, 56), rgb(245, 183, 160));
 .the_nav {
-  background: linear-gradient(rgb(238, 96, 56), rgb(245, 183, 160));
-  padding: 10rem 14%;
+  background: linear-gradient(to left, #030f4a, #9599fa);
+  padding: 3rem 7%;
   border-radius: 8px 4px 0px 0px;
 }
 
@@ -21,27 +22,50 @@
   align-items: center;
   flex-wrap: wrap;
 }
+.links {
+  list-style: none;
+  display: flex;
+  justify-content: center; // Center horizontally
+  align-items: center; // Center vertically if needed
+  flex-wrap: wrap; // Allows wrapping on small screens
+  gap: 2.5rem;
+  text-transform: uppercase;
+  color: rgb(248, 248, 244);
+  padding: 1rem 0;
+  margin: 0 auto; // Optional: helps with centering if it's a block
+}
+
+.links a {
+  color: #f7f7f7;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  padding: 0.3rem 0;
+}
 
 /* Navigation Links */
 .links {
   list-style: none;
   display: flex;
+  justify-content: center; // Center horizontally
+  align-items: center; // Center vertically if needed
+  flex-wrap: wrap; // Allows wrapping on small screens
   gap: 2.5rem;
   text-transform: uppercase;
   color: rgb(248, 248, 244);
-  flex-wrap: wrap;
+  padding: 1rem 0;
+  margin: 0 auto;
 }
 
 .links a {
-  color: #222; // Softer black for better readability
+  color: #f7f7f7;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: bold;
   font-size: 18px;
-
   position: relative;
   padding: 0.3rem 0;
 
-  // Underline effect on hover with animation
   &::after {
     content: "";
     position: absolute;
@@ -49,7 +73,7 @@
     bottom: -3px;
     width: 0%;
     height: 2px;
-    background-color: hsl(0, 2%, 32%);
+    background-color: #f39c12;
     transition: width 0.3s ease;
   }
 
@@ -58,7 +82,7 @@
   }
 
   &:hover {
-    color: hsl(0, 2%, 32%);
+    color: #f39c12;
   }
 }
 

@@ -16,6 +16,7 @@ import NavBar from "./NavBar";
 import Hero from "./Hero";
 import Review from "./Review";
 import Home from "./Home";
+import Footer from "./Footer";
 
 //portfolio-
 function App() {
@@ -39,6 +40,7 @@ function App() {
        
         <Route path="/project/:id" element={<ProjectDetails />} /> */}
       </Routes>
+      <Footer />
     </Router>
   );
 }
