@@ -26,9 +26,16 @@
     display: flex;
     gap: 1.5rem;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    padding: 1rem 0;
 
-    a {
+    li {
+      list-style: none;
+    }
+
+    a,
+    .nav-link {
       color: #f1f1f1;
       text-decoration: none;
       transition: color 0.3s ease;
@@ -36,6 +43,17 @@
       &:hover {
         color: #f39c12;
       }
+
+      &.active {
+        color: #f39c12;
+        font-weight: bold;
+      }
     }
+  }
+
+  .footer-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

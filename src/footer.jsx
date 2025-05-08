@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
@@ -11,8 +12,9 @@ const Footer = () => {
 
         <ul className="footer-links">
           <li>
-            <a href="/myPortfolio/review">Connect</a>
-            {/* <NavLink to="/review">Connect</NavLink> */}
+            <NavLink to="/review" className="nav-link">
+              Connect
+            </NavLink>
           </li>
         </ul>
 
