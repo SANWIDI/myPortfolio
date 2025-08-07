@@ -15,7 +15,7 @@ const Home = () => {
       style={{ maxWidth: "600px", margin: "0 auto", padding: "20px" }}
     >
       <div>
-        <h3>Knowledges</h3>
+        <h3>My Web Skills</h3>
       </div>
       <Carousel
         showThumbs={false}

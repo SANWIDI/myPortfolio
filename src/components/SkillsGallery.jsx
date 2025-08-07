@@ -16,7 +16,7 @@ function SkillsGallery(props) {
 
     {
       name: "Bilingual",
-      description: "Fluent in English, French, and several African dialects.",
+      description: "Fluent in English, French, and several African languages.",
       materials: [
         "Multilingual team collaboration",
         "Translation of project documents",

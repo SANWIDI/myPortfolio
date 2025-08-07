@@ -32,7 +32,6 @@
     border-radius: u.$border-radius;
     transition: background 0.3s;
 
-
     &:hover {
       background: lighten(u.$secondary-color, 10%);
     }

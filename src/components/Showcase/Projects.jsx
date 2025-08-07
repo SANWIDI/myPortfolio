@@ -20,16 +20,17 @@ function Projects() {
       id: 3,
       title: "PHP Laravel",
       description:
-        "As a student starting with PHP Laravel and Heroku. Fund Fairy is my capstone project. I am impressed by how smooth and organized web development becomes. Laravel makes things like routing, database connections, and user authentication surprisingly simple with its elegant syntax and built-in tools. I love how features like Blade templating and Eloquent ORM allow me to build dynamic apps faster and more cleanly. It’s exciting to see my projects come to life with just a few lines of code. Laravel takes away a lot of the confusion and lets me focus on creating. Learning it has made backend development feel accessible—and honestly, really cool and rewarding!",
-      link: "https://fundfairy.live/",
+        "As a student starting with PHP Laravel. Fund Fairy is my capstone project. I am impressed by how smooth and organized web development becomes. Laravel makes things like routing, database connections, and user authentication surprisingly simple with its elegant syntax and built-in tools. I love how features like Blade templating and Eloquent ORM allow me to build dynamic apps faster and more cleanly. It’s exciting to see my projects come to life with just a few lines of code. Laravel takes away a lot of the confusion and lets me focus on creating. Learning it has made backend development feel accessible—and honestly, really cool and rewarding!",
+      link: "https://fundfairy.larability.com",
     },
     {
       id: 4,
       title: "PHP Laravel",
       description:
-        "Workopia is a hands on project using PHP Laravel framework. I am impressed by how smooth and organized web development becomes. Laravel makes things like routing, database connections, and user authentication surprisingly simple with its elegant syntax and built-in tools. I love how features like Blade templating and Eloquent ORM allow me to build dynamic apps faster and more cleanly. It’s exciting to see my projects come to life with just a few lines of code. Laravel takes away a lot of the confusion and lets me focus on creating. Learning it has made backend development feel accessible—and honestly, really cool and rewarding!",
+        " ShortNote: The project isn’t live at the moment since it was taken down from the instructor’s host, but I am working on getting it back online with my own domain. Workopia is a class hands on project using PHP Laravel framework. I am impressed by how smooth and organized web development becomes. Laravel makes things like routing, database connections, and user authentication surprisingly simple with its elegant syntax and built-in tools. I love how features like Blade templating and Eloquent ORM allow me to build dynamic apps faster and more cleanly. It’s exciting to see my projects come to life with just a few lines of code. Laravel takes away a lot of the confusion and lets me focus on creating. Learning it has made backend development feel accessible—and honestly, really cool and rewarding!",
       link: "http://workopia.test/",
     },
+
     {
       id: 5,
       title: "WordPress",
@@ -41,7 +42,7 @@ function Projects() {
 
   return (
     <div className="projects">
-      <h1 className="projects__title">ShowCase</h1>
+      <h1 className="projects__title">My Projects</h1>
       <div className="projects__grid">
         {projectList.map((project) => (
           <ProjectCard
